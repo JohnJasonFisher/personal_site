@@ -1,0 +1,2 @@
+class MtgoController < ApplicationController
+end
