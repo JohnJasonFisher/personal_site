@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   get "" => "homes#index"
   get "/home" => "homes#index"
-  get "/mtgofetchabout" => "mtgo#index"
+  get "/mtgo" => "mtgo#index"
   get "/test" => "homes#test"
 end
