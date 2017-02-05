@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>John J Fisher</title>
-    <%= csrf_meta_tags %>
+    <head>
+        <title>John J Fisher</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Great+Vibes', media: 'all', 'data-turbolinks-track' => true %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-      <div id="mySidenav" class="sidenav">
+    <body>
+        <div id="mySidenav" class="sidenav">
           <div>
               <img id="portrait" src="http://i.imgur.com/FoPGZncr.jpg" alt="JohnFisher.jpeg" width="136" height="175">
           </div>
-
+        <h4 id="myname">John Fisher</h4>
         <a href="/home">Home</a>
         <a href="/mtgo">MTGO Fetch</a>
-      </div>
-      <div class="main">
+        </div>
+        <div class="main">
           <%= yield %>
-      </div>
-  </body>
+        </div>
+    </body>
 </html>
