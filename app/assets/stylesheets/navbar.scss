@@ -1,8 +1,3 @@
-.main {
-    margin-left: 250px;
-    background: #FFF8DC;
-}
-
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 250px; /* 0 width - change this with JavaScript */
@@ -44,6 +39,7 @@
 #main {
     transition: margin-left .5s;
     padding: 20px;
+    margin-left: 250px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
