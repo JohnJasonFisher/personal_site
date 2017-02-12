@@ -1,0 +1,2 @@
+class SvpController < ApplicationController
+end
