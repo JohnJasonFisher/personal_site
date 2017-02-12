@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/mtgo" => "mtgo#index"
   get "/test" => "homes#test"
   get "/svp" => "svp#index"
+  get "/lucha" => "lucha#index"
 end
