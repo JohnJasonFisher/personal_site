@@ -1,0 +1,2 @@
+module TdeHelper
+end

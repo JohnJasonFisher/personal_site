@@ -1,0 +1,2 @@
+class TdeController < ApplicationController
+end
