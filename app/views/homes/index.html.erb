@@ -57,19 +57,24 @@
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Lucha - Latin United Community Housing Association</b></h5>
+          <h5 class="w3-opacity"><i class="fa fa-youtube w3-hover-text-red w3-large"></i>  <b>Lucha - Latin United Community Housing Association</b></h5>
           <a href="http://prod-lucha-app.herokuapp.com" class="w3-text-blue">prod-lucha-app.herokuapp.com</a>
           <p>&#10154; Tracks client rentals, home buying and foreclosure information for clients and employees</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>SVP - Social Venture Partners</b></h5>
+          <div onclick="toggle_youtube_vid('sectiontohide');">
+            <h5 class="w3-opacity"><i class="fa fa-youtube w3-hover-text-red w3-large"></i>  <b>SVP - Social Venture Partners</b></h5>
+          </div>
           <a href="http://prod-svp-chicago.herokuapp.com/home" class="w3-text-blue">prod-svp-chicago.herokuapp.com</a>
           <p>&#10154; Accepts and rates applications from Chicago nonprofits</p>
+          <div id="sectiontohide">
+            <iframe width="764" height="430" src="https://www.youtube.com/embed/60By5ApwAYE" frameborder="0" allowfullscreen></iframe>
+          </div>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>MTGO Price Fetch</b></h5>
+          <h5 class="w3-opacity"><i class="fa fa-youtube w3-hover-text-red w3-large"></i>  <b>MTGO Price Fetch</b></h5>
           <a href="https://mtgopricefetch.herokuapp.com" class="w3-text-blue">mtgopricefetch.herokuapp.com</a>
           <p>&#10154; Automated investment application for Magic the Gathering card collectors</p>
           <hr>
@@ -107,3 +112,13 @@
   <a href="https://twitter.com/Prof_Programmin"><i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i></a>
   <p></p>
 </footer>
+<script>
+function toggle_youtube_vid(id) {
+  var divelement = document.getElementById(id);
+  if (divelement.style.display == "none") {
+    divelement.style.display == "block";
+  } else {
+    divelement.style.display == "none"
+  }
+}
+</script>
