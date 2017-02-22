@@ -63,12 +63,12 @@
           <hr>
         </div>
         <div class="w3-container">
-          <div onclick="toggle_youtube_vid('sectiontohide');">
-            <h5 class="w3-opacity"><i class="fa fa-youtube w3-hover-text-red w3-large"></i>  <b>SVP - Social Venture Partners</b></h5>
+          <div>
+            <h5 class="w3-opacity"><i class="fa fa-youtube w3-hover-text-red w3-large" onclick="toggle_youtube_vid('sectiontohide');"></i>  <b>SVP - Social Venture Partners</b></h5>
           </div>
           <a href="http://prod-svp-chicago.herokuapp.com/home" class="w3-text-blue">prod-svp-chicago.herokuapp.com</a>
           <p>&#10154; Accepts and rates applications from Chicago nonprofits</p>
-          <div id="sectiontohide">
+          <div id="sectiontohide" style="display:none">
             <iframe width="764" height="430" src="https://www.youtube.com/embed/60By5ApwAYE" frameborder="0" allowfullscreen></iframe>
           </div>
           <hr>
@@ -115,10 +115,10 @@
 <script>
 function toggle_youtube_vid(id) {
   var divelement = document.getElementById(id);
-  if (divelement.style.display == "none") {
-    divelement.style.display == "block";
+  if (divelement.style == "display:none") {
+    divelement.style == "display:block";
   } else {
-    divelement.style.display == "none"
+    divelement.style == "display:none";
   }
 }
 </script>
