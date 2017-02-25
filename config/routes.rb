@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get "/test" => "homes#test"
   get "/svp" => "svp#index"
   get "/lucha" => "lucha#index"
+
+  get "download_pdf", to: "homes#download_pdf"
 end
