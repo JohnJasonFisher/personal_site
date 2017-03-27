@@ -19,9 +19,9 @@
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Chicago, IL</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jjfisher91@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>708-310-9880</p>
-          <a href="download_pdf" style="text-decoration:none" id="pdf"><i class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large w3-text-teal"></i>Resume</a>
+          <a href="download_pdf" style="text-decoration:none" id="pdf" onhover="resumeHighlight(pdfIcon)" class="w3-hover-text-red"><i id="pdfIcon" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large w3-text-teal w3-hover-text-red"></i>Resume</a>
           <hr>
-          
+
           <p class="w3-large"><b><i class="fa fa-pencil-square-o fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
           <p>HTML</p>
           <p>CSS</p>
@@ -91,14 +91,9 @@
       <div class="w3-container w3-card-2 w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Actualize Coding Bootcamp & Apprenticeship</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
-          <hr>
-        </div>
-        <div class="w3-container">
           <h5 class="w3-opacity"><b>University of Louisiana at Lafayette</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
-          <p>Bachelor’s Degree, Petroleum Engineering</p><br>
+          <p>Bachelor’s Degree, Engineering</p><br>
         </div>
       </div>
 
@@ -120,6 +115,10 @@
   <p></p>
 </footer>
 <script>
+  // unfinished resume hover change color
+  function resumeHighlight(id) {
+    document.getElementById(id).class = "w3-text-red";
+  }
   function myFunction(id) {
     var x = document.getElementById(id);
       if (x.style.display === 'none') {
