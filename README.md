@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+When you update your resume you need to do two things.
 
-Things you may want to cover:
+1. You need to put your resume in pdf form and save it under app/assets/docs
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2. Then you need to update the pdf name in controllers/homes_controller.rb
